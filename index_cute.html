@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="icon" type="image/x-icon" href="static/images/doraemeng.JPG">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <meta charset="UTF-8">
+  <title>Dynamic Decision Learning: Test-Time Evolution for Abnormality Grounding in Rare Diseases</title>
+  <style>
+    .publication-title {
+      font-size: 3rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .title-text {
+    background: linear-gradient(135deg, #FF5E7E 0%, #76B3FA 50%, #83EAF1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
+    font-weight: 900;
+    animation: gradientShift 10s infinite ease-in-out;
+  }
+
+    @keyframes gradientShift {
+      0% { filter: hue-rotate(0deg); }
+      50% { filter: hue-rotate(20deg); }
+      100% { filter: hue-rotate(0deg); }
+    }
+    .publication-links .button {
+  background: #FFF0F2 !important;
+  color: #FF5E7E !important;
+  border: 1px solid #FFD1D9 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(255, 94, 126, 0.15);
+  font-size: 1.4rem !important;
+  padding: 1.5rem 2rem !important;
+}
+
+.publication-links .button .icon {
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+}
+
+.publication-links .button:hover {
+  background-color: #FFD1D9 !important;
+  border-color: #FF5E7E !important;
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+.publication-links .button .icon i,
+.publication-links .button .icon img {
+  color: #FF5E7E !important;
+  vertical-align: middle;
+}
+
+.publication-links .button:hover .icon i,
+.publication-links .button:hover .icon img {
+  color: white !important;
+}
+
+/* 让按钮间距更合理 */
+.publication-links .link-block {
+  margin: 0 0.3rem;
+}
+
+  </style>
+</head>
+<body style="background-color: #ffffff;">
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-fullhd">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title publication-title">
+              <span class="title-text" style="font-size: 3.5rem; font-weight: 800; display: block; line-height: 1.2; padding-bottom: 0.5rem;">
+                Dynamic Decision Learning: <br>
+                Test-Time Evolution for Abnormality Grounding in Rare Diseases
+              </span>
+            </h1>
+            <div class="is-size-4 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                    <a href="https://lijunrio.github.io/junli/" target="_blank">Jun Li</a><sup>1,2</sup>,
+                    <span class="author-block">
+                      <a href="https://oatmealliu.github.io/" target="_blank">Mingxuan Liu</a><sup>3</sup>,
+                    </span>
+                    <span class="author-block">
+                      <a href="https://jiazhenpan.me/#top" target="_blank">Jiazhen Pan</a><sup>1,2</sup>,
+                    </span>
+                    <span class="author-block">
+                      <a href="https://cheliu-computation.github.io/" target="_blank">Che Liu</a><sup>4</sup>,
+                    </span>
+                    <br>
+                    <span class="author-block">
+                      <a href="https://profiles.imperial.ac.uk/w.bai" target="_blank">Wenjia Bai</a><sup>4</sup>,
+                    </span>
+                    <span class="author-block">
+                      <a href="https://cosmin-bercea.com/" target="_blank">Cosmin I. Bercea</a><sup>*1,2</sup>,
+                    </span>
+                    <span class="author-block">
+                      <a href="https://compai-lab.github.io/author/julia-a.-schnabel/" target="_blank">Julia A. Schnabel</a><sup>*1,2,5,6</sup>
+                    </span>
+                  </span>
+                  <span class="eql-cntrb"><small><br><sup>*</sup>Shared senior authors.</small></span>
+                    
+                  </span>
+                  </div>
+
+
+                        <div class="is-size-5 publication-authors">
+                <div style="text-align: center; margin-bottom: 5px;">
+                    <span class="author-block"><sup>1</sup> Technical University of Munich</span>
+                    <span class="author-block" style="margin: 0 1rem;"><sup>2</sup> Munich Center for Machine Learning</span>
+                    <span class="author-block"><sup>3</sup> University of Trento</span>
+                </div>
+                <div style="text-align: center;">
+                    <span class="author-block"><sup>4</sup> Imperial College London</span>
+                    <span class="author-block" style="margin: 0 1rem;"><sup>5</sup> Helmholtz Munich</span>
+                    <span class="author-block"><sup>6</sup> King's College London</span>
+                </div>
+            </div>
+            
+        
+            
+
+            <div class="column has-text-centered">
+                <div class="publication-links">
+                    <!-- Paper PDF link -->
+                    <span class="link-block">
+                        <a href="papers/icml2026_DDL_arxiv.pdf" target="_blank"
+                           class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                                <i class="fas fa-file-alt"></i>
+                              </span>
+                            <span>Paper</span>
+                        </a>
+                    </span>
+            
+
+                    <!-- Github link -->
+                    <span class="link-block">
+                        <a href="https://github.com/LijunRio/DDL" target="_blank"
+                           class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>Code</span>
+                        </a>
+                    </span>
+            
+                    <!-- ArXiv abstract Link -->
+                    <span class="link-block">
+                        <a href="#" target="_blank"
+                           class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                                <i class="ai ai-arxiv"></i>
+                            </span>
+                            <span>arXiv</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Paper abstract -->
+<section class="section hero is-small" style="padding-top: 0;">
+  <div class="container is-fullhd">
+    <div class="columns is-centered">
+      <div class="column is-full">
+      <div class="content">
+            <h2 class="title is-3 has-text-centered" style="background: rgba(230, 245, 255, 0.5); color: #76bcfd; padding: 15px; border-radius: 20px; border: 2px dashed #c0e1ff;">
+            Overview
+            </h2>
+          <div class="content has-text-justified" style="font-size: 1.1rem; margin-bottom: 20px;">
+            Large vision-language models struggle with clinical abnormality grounding on rare diseases and long-tailed distributions. Severe data scarcity and distribution shifts make fine-tuning impractical, while single-pass inference is highly sensitive to prompt phrasing and visual perturbations. We propose <strong>Dynamic Decisions Learning (DDL)</strong>, a nova framework that optimizes instruction prompts and consolidates predictions across augmented views using structured matching. Across two brain imaging benchmarks with 281 rare pathologies, <strong>DDL</strong> yields up to 105% improvement in localization and consistently outperforms other methods.
+          </div>
+          <div style="text-align: center;">
+            <img src="static/images/teaser_ddl.gif" alt="Teaser" style="display: block; width: 65%; margin: 0 auto; border-radius: 25px;">
+            <div class="content has-text-centered" style="margin-top: 20px; font-size: 1.1rem; color: #555; max-width: 70%; margin-left: auto; margin-right: auto;">
+              <p>
+                <strong>Top:</strong> Static inference with frozen LVLMs suffers from fragility and hallucinations on rare diseases, exhibiting high sensitivity to prompt and visual variations. 
+                <strong>Bottom:</strong> <strong>DDL</strong> enables test-time <em>dynamic evolution</em> by synergizing the <em>Language Space</em> and <em>Visual Space</em> to navigate the decision landscape toward success, achieving up to a <strong>105%</strong> improvement in localization reliability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End paper abstract -->
+
+<!-- Teaser video-->
+
+
+<!-- Method -->
+<section class="section hero is-small">
+  <div class="container is-fullhd">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+         <h2 class="title is-3" style="background: rgba(235, 255, 240, 0.5); color: #7de89c; padding: 15px; border-radius: 20px; border: 2px dashed #c2f5d0; text-align: center;">
+           Method
+         </h2>
+          <div class="content has-text-justified" style="font-size: 1.1rem;">
+          <strong>Overview of the DDL framework.</strong>
+          DDL enables test-time <em>dynamic evolution</em> by synergizing the <em>Language Space</em> and <em>Visual Space</em> to navigate the decision landscape toward success. It optimizes instruction prompts and consolidates predictions across multiple augmented views using structured matching, achieving significant improvements in localization reliability without any additional training.
+          </div>
+          <div style="text-align: center;">
+            <img src="static/images/method.png" alt="Method" style="display: block; width: 100%; border-radius: 25px;">
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-small">
+  <div class="container is-fullhd">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3" style="background: rgba(255, 248, 230, 0.5); color: #ffbc71; padding: 15px; border-radius: 20px; border: 2px dashed #ffe4c0; text-align: center;">
+            Experimental Results
+          </h2>
+          
+          <!-- 第一部分：Scaling Performance -->
+          <div class="columns is-centered">
+            <div class="column is-full">
+              <div class="content">
+                <h3 class="title is-4 has-text-centered" style="color: #ffbc71;">Scaling Performance on NOVA (Rare Diseases)</h3>
+                <div class="table-container">
+                  <table class="table is-fullwidth is-striped is-hoverable is-narrow" style="font-size: 0.95rem; border-radius: 10px; overflow: hidden;">
+                    <thead>
+                      <tr style="background-color: #FFF8E6;">
+                        <th>Model Size</th>
+                        <th>Method</th>
+                        <th class="has-text-centered">mAP@25</th>
+                        <th class="has-text-centered">mAP@50</th>
+                        <th class="has-text-centered">mAP@75</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>3B</strong></td>
+                        <td>Vanilla</td>
+                        <td class="has-text-centered">0.221</td>
+                        <td class="has-text-centered">0.088</td>
+                        <td class="has-text-centered">0.040</td>
+                      </tr>
+                      <tr style="color: #28a745; font-weight: bold; background-color: rgba(235, 255, 240, 0.6);">
+                        <td></td>
+                        <td>DDL (Ours)</td>
+                        <td class="has-text-centered">0.298 <small>(+35%)</small></td>
+                        <td class="has-text-centered">0.150 <small>(+70%)</small></td>
+                        <td class="has-text-centered">0.066 <small>(+66%)</small></td>
+                      </tr>
+                      <tr>
+                        <td><strong>7B</strong></td>
+                        <td>Vanilla</td>
+                        <td class="has-text-centered">0.286</td>
+                        <td class="has-text-centered">0.135</td>
+                        <td class="has-text-centered">0.036</td>
+                      </tr>
+                      <tr style="color: #28a745; font-weight: bold; background-color: rgba(235, 255, 240, 0.6);">
+                        <td></td>
+                        <td>DDL (Ours)</td>
+                        <td class="has-text-centered">0.369 <small>(+29%)</small></td>
+                        <td class="has-text-centered">0.206 <small>(+52%)</small></td>
+                        <td class="has-text-centered">0.075 <small>(+105%)</small></td>
+                      </tr>
+                      <tr>
+                        <td><strong>32B</strong></td>
+                        <td>Vanilla</td>
+                        <td class="has-text-centered">0.406</td>
+                        <td class="has-text-centered">0.208</td>
+                        <td class="has-text-centered">0.058</td>
+                      </tr>
+                      <tr style="color: #28a745; font-weight: bold; background-color: rgba(235, 255, 240, 0.6);">
+                        <td></td>
+                        <td>DDL (Ours)</td>
+                        <td class="has-text-centered">0.454 <small>(+12%)</small></td>
+                        <td class="has-text-centered">0.266 <small>(+28%)</small></td>
+                        <td class="has-text-centered">0.096 <small>(+66%)</small></td>
+                      </tr>
+                      <tr>
+                        <td><strong>72B</strong></td>
+                        <td>Vanilla</td>
+                        <td class="has-text-centered">0.411</td>
+                        <td class="has-text-centered">0.245</td>
+                        <td class="has-text-centered">0.065</td>
+                      </tr>
+                      <tr style="color: #28a745; font-weight: bold; background-color: rgba(235, 255, 240, 0.6);">
+                        <td></td>
+                        <td>DDL (Ours)</td>
+                        <td class="has-text-centered">0.500 <small>(+22%)</small></td>
+                        <td class="has-text-centered">0.301 <small>(+23%)</small></td>
+                        <td class="has-text-centered">0.107 <small>(+65%)</small></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p style="font-size: 0.9rem; color: #28a745; font-style: italic; text-align: center;">
+                  * DDL achieves superior scaling, even enabling the 32B model to surpass the 72B Zero-Shot baseline.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 第二部分：更多案例展示 -->
+          <h3 class="title is-4 has-text-centered" style="margin-top: 40px; color: #ffbc71;">Visulization from 3B to 72B</h3>
+          <div class="container" style="overflow: hidden;">
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item has-text-centered">
+                <img src="static/images/3b.png" alt="3B Results" style="width: 100%; border-radius: 15px; display: block; margin: 0 auto;"/>
+                <h2 class="subtitle has-text-centered" style="font-size: 1.1rem; margin-top: 10px; font-weight: bold;">[Qwen2.5-VL-3B] Grounding performance</h2>
+              </div>
+              <div class="item has-text-centered">
+                <img src="static/images/7b.png" alt="7B Results" style="width: 100%; border-radius: 15px; display: block; margin: 0 auto;"/>
+                <h2 class="subtitle has-text-centered" style="font-size: 1.1rem; margin-top: 10px; font-weight: bold;">[Qwen2.5-VL-7B] Grounding performance</h2>
+              </div>
+              <div class="item has-text-centered">
+                <img src="static/images/32b.png" alt="32B Results" style="width: 100%; border-radius: 15px; display: block; margin: 0 auto;"/>
+                <h2 class="subtitle has-text-centered" style="font-size: 1.1rem; margin-top: 10px; font-weight: bold;">[Qwen2.5-VL-32B] Grounding performance</h2>
+              </div>
+              <div class="item has-text-centered">
+                <img src="static/images/72b.png" alt="72B Results" style="width: 100%; border-radius: 15px; display: block; margin: 0 auto;"/>
+                <h2 class="subtitle has-text-centered" style="font-size: 1.1rem; margin-top: 10px; font-weight: bold;">[Qwen2.5-VL-72B] Grounding performance</h2>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--End BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-fullhd content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @inproceedings{li2026dynamic,
+      title={Dynamic Decision Learning: Test-Time Evolution for Abnormality Grounding in Rare Diseases}, 
+      author={Jun Li and Mingxuan Liu and Jiazhen Pan and Che Liu and Wenjia Bai and Cosmin I. Bercea and Julia A. Schnabel},
+      booktitle={arXiv},
+      year={2026},
+}
+</code></pre>
+  </div>
+</section>
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
